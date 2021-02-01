@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.1)
+  - PinEntryField (0.1.7)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - PinEntryField
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PinEntryField
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  PinEntryField: 1aeaab1abcf0f633d834446c57b53bab3c18a9be
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 602892f2c87d9cec81be718e9e49299838e34484
+
+COCOAPODS: 1.10.1
