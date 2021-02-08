@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import PinEntryField
 
 class VerifyViewController: UIViewController {
 
@@ -167,7 +166,7 @@ class VerifyViewController: UIViewController {
     }
     
     @objc private func didTapChangePhoneNumberButton() {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: false, completion: nil)
     }
     
     @objc private func didTapResendButton() {

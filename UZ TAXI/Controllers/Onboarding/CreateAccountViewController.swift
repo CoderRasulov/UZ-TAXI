@@ -159,6 +159,8 @@ class CreateAccountViewController: UIViewController {
         
         UserDefaults.standard.setValue(true, forKey: "logged")
         
+        let rootVC = view.window?.rootViewController as! HomeViewController
+        rootVC.checkRootVC()
         view.window?.rootViewController?.dismiss(
             animated: false, completion: nil
         )

@@ -6,7 +6,6 @@ target 'UZ TAXI' do
   use_frameworks!
 
   # Pods for UZ TAXI
-	pod 'PinEntryField'
-  	pod 'Alamofire'
+  pod 'Alamofire'
  	pod 'SwiftyJSON'
 end

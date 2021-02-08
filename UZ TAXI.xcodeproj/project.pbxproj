@@ -7,7 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C6D23A525C849EE00F2F37F /* Pods_UZ_TAXI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F2E35B3E938483AA1A3A69 /* Pods_UZ_TAXI.framework */; };
+		8C5AF62125C9B46600E1EBAD /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5AF61A25C9B44000E1EBAD /* Mapbox.framework */; };
+		8C5AF62225C9B46600E1EBAD /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5AF61A25C9B44000E1EBAD /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C5AF62325C9B46700E1EBAD /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5AF61B25C9B44000E1EBAD /* MapboxMobileEvents.framework */; };
+		8C5AF62425C9B46700E1EBAD /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5AF61B25C9B44000E1EBAD /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C5AF62625C9C00900E1EBAD /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AF62525C9C00900E1EBAD /* SkeletonView.swift */; };
+		8C6D23B025C85FCA00F2F37F /* Pods_UZ_TAXI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F2E35B3E938483AA1A3A69 /* Pods_UZ_TAXI.framework */; };
+		8C88A31125D1718000BE9C90 /* dc-metro.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A30625D1718000BE9C90 /* dc-metro.geojson */; };
+		8C88A31225D1718000BE9C90 /* text-format.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A30725D1718000BE9C90 /* text-format.json */; };
+		8C88A31325D1718000BE9C90 /* ports.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A30825D1718000BE9C90 /* ports.geojson */; };
+		8C88A31425D1718000BE9C90 /* clustering.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A30925D1718000BE9C90 /* clustering.xcassets */; };
+		8C88A31525D1718000BE9C90 /* nps-icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A30A25D1718000BE9C90 /* nps-icons.xcassets */; };
+		8C88A31625D1718000BE9C90 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A30B25D1718000BE9C90 /* icons.xcassets */; };
+		8C88A31725D1718000BE9C90 /* missing_icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A30C25D1718000BE9C90 /* missing_icon.json */; };
+		8C88A31825D1718000BE9C90 /* iOSLineGeoJSON.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A30D25D1718000BE9C90 /* iOSLineGeoJSON.geojson */; };
+		8C88A31925D1718000BE9C90 /* example.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A30E25D1718000BE9C90 /* example.geojson */; };
+		8C88A31A25D1718000BE9C90 /* radar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A30F25D1718000BE9C90 /* radar.gif */; };
+		8C88A31B25D1718000BE9C90 /* third_party_vector_style.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C88A31025D1718000BE9C90 /* third_party_vector_style.json */; };
 		8CD21B6225C846B600243BC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD21B6125C846B600243BC7 /* AppDelegate.swift */; };
 		8CD21B6625C846C200243BC7 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD21B6425C846C200243BC7 /* LaunchModel.swift */; };
 		8CD21B6725C846C200243BC7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD21B6525C846C200243BC7 /* Color.swift */; };
@@ -27,12 +43,42 @@
 		8CD21B9025C8477500243BC7 /* PanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD21B8C25C8477400243BC7 /* PanGesture.swift */; };
 		8CD21B9125C8477500243BC7 /* ScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD21B8D25C8477500243BC7 /* ScrollViewExtension.swift */; };
 		8CD21B9225C8477500243BC7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD21B8E25C8477500243BC7 /* Extensions.swift */; };
+		8CE1E26C25C99DFB00B80D19 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE1E26B25C99DFB00B80D19 /* CodeView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C6D23AF25C85E7900F2F37F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C5AF62425C9B46700E1EBAD /* MapboxMobileEvents.framework in Embed Frameworks */,
+				8C5AF62225C9B46600E1EBAD /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		105749546EA68D966CE458FE /* Pods-UZ TAXI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UZ TAXI.release.xcconfig"; path = "Target Support Files/Pods-UZ TAXI/Pods-UZ TAXI.release.xcconfig"; sourceTree = "<group>"; };
 		24F2E35B3E938483AA1A3A69 /* Pods_UZ_TAXI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UZ_TAXI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A701259695BCF9B088D45D2 /* Pods-UZ TAXI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UZ TAXI.debug.xcconfig"; path = "Target Support Files/Pods-UZ TAXI/Pods-UZ TAXI.debug.xcconfig"; sourceTree = "<group>"; };
+		8C5AF61A25C9B44000E1EBAD /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		8C5AF61B25C9B44000E1EBAD /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		8C5AF62525C9C00900E1EBAD /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
+		8C88A30625D1718000BE9C90 /* dc-metro.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dc-metro.geojson"; sourceTree = "<group>"; };
+		8C88A30725D1718000BE9C90 /* text-format.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "text-format.json"; sourceTree = "<group>"; };
+		8C88A30825D1718000BE9C90 /* ports.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ports.geojson; sourceTree = "<group>"; };
+		8C88A30925D1718000BE9C90 /* clustering.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = clustering.xcassets; sourceTree = "<group>"; };
+		8C88A30A25D1718000BE9C90 /* nps-icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "nps-icons.xcassets"; sourceTree = "<group>"; };
+		8C88A30B25D1718000BE9C90 /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icons.xcassets; sourceTree = "<group>"; };
+		8C88A30C25D1718000BE9C90 /* missing_icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missing_icon.json; sourceTree = "<group>"; };
+		8C88A30D25D1718000BE9C90 /* iOSLineGeoJSON.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iOSLineGeoJSON.geojson; sourceTree = "<group>"; };
+		8C88A30E25D1718000BE9C90 /* example.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.geojson; sourceTree = "<group>"; };
+		8C88A30F25D1718000BE9C90 /* radar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = radar.gif; sourceTree = "<group>"; };
+		8C88A31025D1718000BE9C90 /* third_party_vector_style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = third_party_vector_style.json; sourceTree = "<group>"; };
 		8CD21B4325C8467500243BC7 /* UZ TAXI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UZ TAXI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD21B5425C8467700243BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CD21B6125C846B600243BC7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +100,7 @@
 		8CD21B8C25C8477400243BC7 /* PanGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGesture.swift; sourceTree = "<group>"; };
 		8CD21B8D25C8477500243BC7 /* ScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewExtension.swift; sourceTree = "<group>"; };
 		8CD21B8E25C8477500243BC7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8CE1E26B25C99DFB00B80D19 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +108,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C6D23A525C849EE00F2F37F /* Pods_UZ_TAXI.framework in Frameworks */,
+				8C5AF62325C9B46700E1EBAD /* MapboxMobileEvents.framework in Frameworks */,
+				8C6D23B025C85FCA00F2F37F /* Pods_UZ_TAXI.framework in Frameworks */,
+				8C5AF62125C9B46600E1EBAD /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C88A30525D1718000BE9C90 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C88A30625D1718000BE9C90 /* dc-metro.geojson */,
+				8C88A30725D1718000BE9C90 /* text-format.json */,
+				8C88A30825D1718000BE9C90 /* ports.geojson */,
+				8C88A30925D1718000BE9C90 /* clustering.xcassets */,
+				8C88A30A25D1718000BE9C90 /* nps-icons.xcassets */,
+				8C88A30B25D1718000BE9C90 /* icons.xcassets */,
+				8C88A30C25D1718000BE9C90 /* missing_icon.json */,
+				8C88A30D25D1718000BE9C90 /* iOSLineGeoJSON.geojson */,
+				8C88A30E25D1718000BE9C90 /* example.geojson */,
+				8C88A30F25D1718000BE9C90 /* radar.gif */,
+				8C88A31025D1718000BE9C90 /* third_party_vector_style.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		8CD21B3A25C8467400243BC7 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +160,7 @@
 				8CD21B6925C846C700243BC7 /* Models */,
 				8CD21B7B25C846F600243BC7 /* Views */,
 				8CD21B8725C8473300243BC7 /* Controllers */,
+				8C88A30525D1718000BE9C90 /* Files */,
 				8CD21B9425C8477900243BC7 /* Utils */,
 				8CD21B5425C8467700243BC7 /* Info.plist */,
 			);
@@ -102,7 +170,6 @@
 		8CD21B6925C846C700243BC7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8CD21B6525C846C200243BC7 /* Color.swift */,
 				8CD21B6425C846C200243BC7 /* LaunchModel.swift */,
 			);
 			path = Models;
@@ -122,6 +189,8 @@
 			children = (
 				8CD21B7A25C846E200243BC7 /* Storyboards */,
 				8CD21B6E25C846DA00243BC7 /* Assets.xcassets */,
+				8CE1E26B25C99DFB00B80D19 /* CodeView.swift */,
+				8C5AF62525C9C00900E1EBAD /* SkeletonView.swift */,
 				8CD21B6B25C846DA00243BC7 /* CardView.swift */,
 				8CD21B7125C846DA00243BC7 /* LaunchCollectionViewCell.swift */,
 				8CD21B6D25C846DA00243BC7 /* MainTableViewCell.swift */,
@@ -144,8 +213,8 @@
 			children = (
 				8CD21B7C25C8472C00243BC7 /* LaunchViewController.swift */,
 				8CD21B7F25C8472C00243BC7 /* LogInViewController.swift */,
-				8CD21B7D25C8472C00243BC7 /* CreateAccountViewController.swift */,
 				8CD21B8025C8472C00243BC7 /* VerifyViewController.swift */,
+				8CD21B7D25C8472C00243BC7 /* CreateAccountViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -153,6 +222,7 @@
 		8CD21B9425C8477900243BC7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8CD21B6525C846C200243BC7 /* Color.swift */,
 				8CD21B8E25C8477500243BC7 /* Extensions.swift */,
 				8CD21B8B25C8477400243BC7 /* PanExtension.swift */,
 				8CD21B8C25C8477400243BC7 /* PanGesture.swift */,
@@ -164,6 +234,8 @@
 		AF333B07EC2E89AEA687F915 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C5AF61A25C9B44000E1EBAD /* Mapbox.framework */,
+				8C5AF61B25C9B44000E1EBAD /* MapboxMobileEvents.framework */,
 				24F2E35B3E938483AA1A3A69 /* Pods_UZ_TAXI.framework */,
 			);
 			name = Frameworks;
@@ -190,6 +262,7 @@
 				8CD21B4025C8467400243BC7 /* Frameworks */,
 				8CD21B4125C8467400243BC7 /* Resources */,
 				573C8996AFB12D47E871678B /* [CP] Embed Pods Frameworks */,
+				8C6D23AF25C85E7900F2F37F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,8 +311,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C88A31A25D1718000BE9C90 /* radar.gif in Resources */,
+				8C88A31825D1718000BE9C90 /* iOSLineGeoJSON.geojson in Resources */,
+				8C88A31625D1718000BE9C90 /* icons.xcassets in Resources */,
+				8C88A31B25D1718000BE9C90 /* third_party_vector_style.json in Resources */,
+				8C88A31725D1718000BE9C90 /* missing_icon.json in Resources */,
+				8C88A31525D1718000BE9C90 /* nps-icons.xcassets in Resources */,
+				8C88A31325D1718000BE9C90 /* ports.geojson in Resources */,
 				8CD21B7725C846DA00243BC7 /* LaunchScreen.storyboard in Resources */,
 				8CD21B7525C846DA00243BC7 /* Assets.xcassets in Resources */,
+				8C88A31225D1718000BE9C90 /* text-format.json in Resources */,
+				8C88A31425D1718000BE9C90 /* clustering.xcassets in Resources */,
+				8C88A31125D1718000BE9C90 /* dc-metro.geojson in Resources */,
+				8C88A31925D1718000BE9C90 /* example.geojson in Resources */,
 				8CD21B7325C846DA00243BC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,9 +386,11 @@
 				8CD21B7225C846DA00243BC7 /* CardView.swift in Sources */,
 				8CD21B6725C846C200243BC7 /* Color.swift in Sources */,
 				8CD21B8325C8472C00243BC7 /* HomeViewController.swift in Sources */,
+				8CE1E26C25C99DFB00B80D19 /* CodeView.swift in Sources */,
 				8CD21B8F25C8477500243BC7 /* PanExtension.swift in Sources */,
 				8CD21B7425C846DA00243BC7 /* MainTableViewCell.swift in Sources */,
 				8CD21B9225C8477500243BC7 /* Extensions.swift in Sources */,
+				8C5AF62625C9C00900E1EBAD /* SkeletonView.swift in Sources */,
 				8CD21B8225C8472C00243BC7 /* CreateAccountViewController.swift in Sources */,
 				8CD21B8525C8472C00243BC7 /* VerifyViewController.swift in Sources */,
 				8CD21B7825C846DA00243BC7 /* LaunchCollectionViewCell.swift in Sources */,
@@ -437,9 +523,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNAYM7ATY7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "UZ TAXI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +541,8 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Debug;
 		};
@@ -459,9 +552,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNAYM7ATY7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "UZ TAXI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,6 +569,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Release;
 		};

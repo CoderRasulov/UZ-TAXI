@@ -2,8 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Your precise location is used to calculate turn-by-turn directions, show your location on the map, and help improve the map.</string>
+    <key>NSLocationTemporaryUsageDescriptionDictionary</key>
+    <dict>
+        <key>MGLAccuracyAuthorizationDescription</key>
+        <string>Please enable precise location. Turn-by-turn directions only work when precise location data is available.</string>
+    </dict>
 	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoiY29kZXJyYXN1bG92IiwiYSI6ImNra21qaWRwbTM5Z3IycHBhZXk4dGMycjMifQ.sQUzZZqFN5ktC8nqAFhT8A</string>
+	<string>pk.eyJ1IjoiY29kZXJyYXN1bG92IiwiYSI6ImNra283bnoyeTJpejQycHF0Z3B4am1jc2MifQ.n43CcjHzAYWFyat0elSWAQ</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

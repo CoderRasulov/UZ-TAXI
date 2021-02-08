@@ -9,7 +9,7 @@ class CardView: UIView {
     var progressBool : Bool = false
     var contentOffsetY: Bool = true
     
-    var constHeight: CGFloat = 300
+    var constHeight: CGFloat = 250
 
     let cardTableView: UITableView = {
         let tableView = UITableView()
@@ -120,7 +120,6 @@ extension CardView: UITableViewDelegate, UITableViewDataSource {
 extension CardView : UIGestureRecognizerDelegate {
 
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool{
-
         return true
     }
 }

@@ -1,4 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-UZ TAXI/Pods-UZ TAXI-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
-${BUILT_PRODUCTS_DIR}/PinEntryField/PinEntryField.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

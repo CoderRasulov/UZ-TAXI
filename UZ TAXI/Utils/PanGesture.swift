@@ -62,8 +62,8 @@ extension CardView {
                 }
             } else {
                 UIView.animate(withDuration: 0.3) {
-                    self.constHeight = 300
-                    panView.frame.origin.y = self.frame.height - 300
+                    self.constHeight = 250
+                    panView.frame.origin.y = self.frame.height - 250
                     self.cardTableView.selectRow(
                         at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .top
                     )
